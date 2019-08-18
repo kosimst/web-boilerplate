@@ -1,0 +1,19 @@
+steps:
+  # Install dependencies for client
+  - name: gcr.io/cloud-builders/npm
+    args: [install]
+  # Build client
+  - name: gcr.io/cloud-builders/npm
+    args: [run-script, build]
+  # Install dependencies for server
+  - name: gcr.io/cloud-builders/npm
+    args: [install]
+    dir: ./server
+  # Build server
+  - name: gcr.io/cloud-builders/npm
+    args: [run-script, build]
+    dir: ./server
+  # Deploy app
+  - name: gcr.io/cloud-builders/gcloud
+    args: [app, deploy, '${_APPNAME}']
+    dir: ./server

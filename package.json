@@ -1,11 +1,12 @@
 {
-  "name": "pwa-starter-kit",
-  "version": "0.9.0",
+  "name": "kosimst-web-boilerplate",
+  "version": "1.0.0",
   "contributors": [
-    "The Polymer Authors"
+    "The Polymer Authors",
+    "Simon Steindl"
   ],
   "license": "BSD-3-Clause",
-  "repository": "Polymer/pwa-starter-kit",
+  "repository": "kosimst/web-boilerplate",
   "scripts": {
     "start": "gulp serve",
     "build": "tsc && polymer build --auto-base-path && gulp prpl-server",
@@ -19,12 +20,28 @@
     "test:regenerate_screenshots": "tsc && mocha test/integration/screenshots-baseline/regenerate.js --timeout=15000"
   },
   "dependencies": {
-    "@polymer/app-layout": "^3.0.0",
+    "@material/drawer": "^3.1.1",
+    "@material/list": "^3.1.0",
+    "@material/mwc-drawer": "^0.6.0",
+    "@material/mwc-top-app-bar": "^0.6.0",
+    "@material/top-app-bar": "^3.1.0",
+    "@polymer/app-layout": "^3.1.0",
+    "@polymer/iron-icon": "^3.0.1",
+    "@polymer/iron-icons": "^3.0.1",
     "@polymer/polymer": "^3.1.0",
+    "@vaadin/vaadin-app-layout": "^2.0.2",
+    "@vaadin/vaadin-button": "^2.2.1",
+    "@vaadin/vaadin-dialog": "^2.2.1",
+    "@vaadin/vaadin-form-layout": "^2.1.5",
+    "@vaadin/vaadin-login": "^1.0.1",
+    "@vaadin/vaadin-tabs": "^3.0.4",
+    "@vaadin/vaadin-text-field": "^2.4.10",
     "@webcomponents/webcomponentsjs": "^2.2.4",
+    "firebase": "^6.3.5",
     "lit-element": "^2.0.1",
+    "lit-html": "^1.1.2",
     "pwa-helpers": "^0.9.0",
-    "redux": "^4.0.0",
+    "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0"
   },

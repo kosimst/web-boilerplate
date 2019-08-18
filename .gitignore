@@ -1,6 +1,15 @@
+# Client
 build/
 node_modules/
 test/integration/screenshots-current/
 _site/
 .DS_Store
 src/**/*.js
+src/**/*.js.map
+assets/**/*.js
+assets/**/*.js.map
+
+# Server
+server/node_modules
+server/**/*.js
+server/**/*.js.map
