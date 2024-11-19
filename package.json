@@ -37,7 +37,7 @@
     "@vaadin/vaadin-tabs": "^3.0.4",
     "@vaadin/vaadin-text-field": "^2.4.10",
     "@webcomponents/webcomponentsjs": "^2.2.4",
-    "firebase": "^6.3.5",
+    "firebase": "^10.9.0",
     "lit-element": "^2.0.1",
     "lit-html": "^1.1.2",
     "pwa-helpers": "^0.9.0",
